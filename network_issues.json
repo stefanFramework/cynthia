@@ -1,0 +1,122 @@
+[
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 15,
+      "download_speed_mbps": 150.2,
+      "upload_speed_mbps": 50.3,
+      "packet_loss_percentage": 0,
+      "latency_issues": false,
+      "dns_resolution_time_ms": 45,
+      "recommended_action": "Your connection is stable. No issues detected."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 220,
+      "download_speed_mbps": 5.2,
+      "upload_speed_mbps": 0.5,
+      "packet_loss_percentage": 8,
+      "latency_issues": true,
+      "dns_resolution_time_ms": 400,
+      "recommended_action": "High latency and packet loss detected. Try restarting your router or contacting your ISP."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 35,
+      "download_speed_mbps": 1.2,
+      "upload_speed_mbps": 0.2,
+      "packet_loss_percentage": 2,
+      "latency_issues": false,
+      "dns_resolution_time_ms": 150,
+      "recommended_action": "Your download speed is too low. Check if other devices are consuming bandwidth or contact your ISP."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 95,
+      "download_speed_mbps": 20.5,
+      "upload_speed_mbps": 10.1,
+      "packet_loss_percentage": 0,
+      "latency_issues": false,
+      "dns_resolution_time_ms": 60,
+      "recommended_action": "Your connection seems fine, but if you experience slow browsing, try changing your DNS server."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 180,
+      "download_speed_mbps": 25.3,
+      "upload_speed_mbps": 5.4,
+      "packet_loss_percentage": 5,
+      "latency_issues": true,
+      "dns_resolution_time_ms": 350,
+      "recommended_action": "Moderate packet loss and high latency detected. Try resetting your modem or using a wired connection."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 10,
+      "download_speed_mbps": 500.0,
+      "upload_speed_mbps": 250.0,
+      "packet_loss_percentage": 0,
+      "latency_issues": false,
+      "dns_resolution_time_ms": 30,
+      "recommended_action": "Your internet speed is excellent. If you have issues, check your device settings."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 140,
+      "download_speed_mbps": 50.0,
+      "upload_speed_mbps": 3.0,
+      "packet_loss_percentage": 1,
+      "latency_issues": true,
+      "dns_resolution_time_ms": 200,
+      "recommended_action": "High latency detected. Restart your router or try moving closer to it if on WiFi."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 50,
+      "download_speed_mbps": 100.0,
+      "upload_speed_mbps": 20.0,
+      "packet_loss_percentage": 10,
+      "latency_issues": false,
+      "dns_resolution_time_ms": 100,
+      "recommended_action": "Severe packet loss detected. Check for network congestion or interference."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 5,
+      "download_speed_mbps": 300.0,
+      "upload_speed_mbps": 100.0,
+      "packet_loss_percentage": 0,
+      "latency_issues": false,
+      "dns_resolution_time_ms": 25,
+      "recommended_action": "Your network is in great shape. No issues found."
+    }
+  },
+  {
+    "status": "success",
+    "diagnostic": {
+      "ping_ms": 400,
+      "download_speed_mbps": 2.0,
+      "upload_speed_mbps": 0.1,
+      "packet_loss_percentage": 15,
+      "latency_issues": true,
+      "dns_resolution_time_ms": 500,
+      "recommended_action": "Critical network issues detected. Contact your ISP immediately."
+    }
+  }
+]
