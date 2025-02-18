@@ -52,9 +52,4 @@ This will start the chatbot interface via Gradio.
 This project is a proof of concept and **not** an example of best practices in coding structure or organization. The primary goal was to experiment with function execution via `tool_calls` and explore how they can extend AI functionality. There is significant room for improvement in terms of code quality and architecture.
 
 ## License
-MIT License (or specify another license if applicable)
-
----
-
-Feel free to modify the README to fit your needs!
-
+This project is licensed under the GPL-3.0 License.
