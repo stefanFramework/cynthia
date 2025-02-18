@@ -3,36 +3,42 @@ from typing import Any
 from cynthia.integrations.openai.clients import GptClient
 
 
-class GptFacade:
+class GptService:
+    system_message: str = None
+    prediction_value: float = 0.5
+
     def __init__(self, api_key: str):
-        self.client = GptClient(api_key=api_key)
+        self.client = GptClient(
+            api_key=api_key,
+            temperature=self.prediction_value,
+        )
 
     def get_user_request(
             self,
-            user_request: str,
-            history: list[dict[str, Any]] = None,
+            messages: list[dict[str, Any]],
             functions: list[dict[str, Any]] = None
     ):
-        messages = self._build_messages_parameter(user_request, history)
         tools = self._build_tools_parameter(functions)
         return self.client.execute_completion(
             messages=messages,
             tools=tools
         )
 
-    def _build_messages_parameter(
+    def set_system_message(self, message: str):
+        self.system_message = message
+
+    def set_prediction_value(self, value: float):
+        self.prediction_value = value
+
+    def build_messages_parameter(
             self,
             user_request: str,
             history: list[dict[str, Any]] = None
     ):
-        system_message = {
-            "role": "system",
-            "content": "You are a Technical support assistant." +
-                       " Your mission is to provide a diagnostic to a customer. " +
-                       "You have to be kind and make clear and short explanations"
-        }
+        messages = []
 
-        messages = [system_message]
+        if self.system_message:
+            messages.append({"role": "system", "content": self.system_message})
 
         if history:
             messages += history
